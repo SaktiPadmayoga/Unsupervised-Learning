@@ -1,5 +1,1 @@
-streamlit
-scikit-learn
-numpy
-pandas
-plotly
+https://unsupervised-learning-sakti.streamlit.app/
