@@ -49,11 +49,12 @@ st.set_page_config(
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 if uploaded_file is not None:
     input_data = pd.read_csv(uploaded_file)
-    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - 11684</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Sakti</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
 # Directory where the models are stored
 model_directory = r"/Users/saktiyoga/Development/University/Semester 5/PMDPM/Unsupervised Learning (Praktek)/Tugas4_B_11684"
+print(model_directory)
 model_path = {
     "AGG_model": os.path.join(model_directory, 'AGG_model.pkl'),
     "KMeans_model": os.path.join(model_directory, 'KMeans_model.pkl'),
