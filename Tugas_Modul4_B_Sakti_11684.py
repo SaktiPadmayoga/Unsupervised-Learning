@@ -53,12 +53,10 @@ if uploaded_file is not None:
     st.dataframe(input_data)
 
 # Directory where the models are stored
-model_directory = r"/Users/saktiyoga/Development/University/Semester 5/PMDPM/Unsupervised Learning (Praktek)/Tugas4_B_11684/"
-
 model_path = {
-    "AGG_model": os.path.join(model_directory, r'AGG_model.pkl'),
-    "KMeans_model": os.path.join(model_directory, r'KMeans_model.pkl'),
-    "DBSCAN_model": os.path.join(model_directory, r'DBSCAN_model.pkl')
+    "AGG_model": 'AGG_model.pkl',
+    "KMeans_model": 'KMeans_model.pkl',
+    "DBSCAN_model": 'DBSCAN_model.pkl'
 }
 
 # Load models into a dictionary
